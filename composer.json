@@ -1,0 +1,21 @@
+{
+    "name": "hail812/yii2-adminlte3",
+    "description": "adminlte3 for yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "hail",
+            "email": "hail812@163.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "hail812\\adminlte3\\": "src"
+        }
+    }
+}
