@@ -28,4 +28,8 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \hail812\adminlte3\AutoloadExample::widget(); ?>```
+<?= \hail812\adminlte3\widgets\Alert::widget([
+    'type' => 'success',
+    'body' => '<h3>Congratulations!</h3>'
+]) ?>
+```
