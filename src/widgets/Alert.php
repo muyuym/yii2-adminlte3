@@ -7,9 +7,9 @@ use yii\bootstrap4\Widget;
 class Alert extends Widget
 {
     public $alertTypes = [
-        'success' => [
-            'class' => 'alert-success',
-            'icon' => 'fa-check'
+        'danger' => [
+            'class' => 'alert-danger',
+            'icon' => 'fa-ban'
         ],
         'info' => [
             'class' => 'alert-info',
@@ -19,9 +19,9 @@ class Alert extends Widget
             'class' => 'alert-warning',
             'icon' => 'fa-exclamation-triangle'
         ],
-        'danger' => [
-            'class' => 'alert-danger',
-            'icon' => 'fa-ban'
+        'success' => [
+            'class' => 'alert-success',
+            'icon' => 'fa-check'
         ]
     ];
 
