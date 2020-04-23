@@ -2,6 +2,8 @@ hail812/yii2-adminlte3
 ======================
 adminlte3 for yii2
 
+<img width="1440" alt="Screen Shot 2020-04-23 at 11 56 54 AM" src="https://user-images.githubusercontent.com/3158261/80057627-949b2300-8559-11ea-80ca-bff1128b0064.png">
+
 Installation
 ------------
 
