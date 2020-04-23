@@ -150,6 +150,11 @@ use yii\helpers\Html;
                 <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
             </div>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<?=\yii\helpers\Url::toRoute('site/login')?>">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+        </li>
         <li class="nav-item dropdown user-menu">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                 <img src="<?=$assetDir?>/img/user2-160x160.jpg" class="user-image img-circle elevation-2" alt="User Image">
