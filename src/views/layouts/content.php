@@ -12,7 +12,7 @@ use yii\bootstrap4\Breadcrumbs;
                     <h1 class="m-0 text-dark">
                         <?php
                         if (!is_null($this->title)) {
-                            echo $this->title;
+                            echo \yii\helpers\Html::encode($this->title);
                         } else {
                             echo \yii\helpers\Inflector::camelize($this->context->id);
                         }
