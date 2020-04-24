@@ -12,6 +12,9 @@ class PluginAsset extends AssetBundle
     ];
 
     public static $pluginMap = [
+        'fontawesome' => [
+            'css' => 'fontawesome-free/css/all.min.css'
+        ],
         'icheck-bootstrap' => [
             'css' => ['icheck-bootstrap/icheck-bootstrap.css']
         ]
@@ -24,12 +27,12 @@ class PluginAsset extends AssetBundle
         foreach ($pluginName as $name) {
             $plugin = self::$pluginMap[$name];
             if (isset($plugin['css'])) {
-                foreach ($plugin['css'] as $v) {
+                foreach ((array) $plugin['css'] as $v) {
                     $this->css[] = $v;
                 }
             }
             if (isset($plugin['js'])) {
-                foreach ($plugin['js'] as $v) {
+                foreach ((array) $plugin['js'] as $v) {
                     $this->js[] = $v;
                 }
             }
