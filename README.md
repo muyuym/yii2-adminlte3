@@ -28,6 +28,7 @@ Usage
 -----
 
 Once the extension is installed, you can config the path mappings of the view component:
+
 ```php
 'components' => [
     'view' => [
@@ -43,6 +44,7 @@ Once the extension is installed, you can config the path mappings of the view co
 Copy files from @vendor/hail812/yii2-adminlte3/src/views to @app/views, then edit.
 
 simply use:
+
 ```php
 <?= \hail812\adminlte3\widgets\Alert::widget([
     'type' => 'success',
@@ -53,6 +55,7 @@ simply use:
 AdminLTE Plugins
 ----------------
 AdminLTE Plugins are not included in AdminLteAsset, if you want to use any of them you can add it dynamically with PluginAsset.
+
 ```php
 namespace hail812\adminlte3\assets;
 
