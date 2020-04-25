@@ -35,6 +35,11 @@ class Alert extends Widget
     public $body;
 
     /**
+     * @var bool whether or not the body has the head
+     */
+    public $simple = false;
+
+    /**
      * @var array|false the options for rendering the close button tag.
      *
      * The following special options are supported:
@@ -60,9 +65,13 @@ class Alert extends Widget
 
     public function run()
     {
-        $icon = '<h5><i class="icon fas '.$this->alertTypes[$this->type]['icon'].'"></i> '.$this->title.'!</h5>';
+        $head = '';
+        if (!$this->simple) {
+            $head = '<h5><i class="icon fas '.$this->alertTypes[$this->type]['icon'].'"></i> '.$this->title.'!</h5>';
+        }
+
         echo \yii\bootstrap4\Alert::widget([
-            'body' => $icon.$this->body,
+            'body' => $head.$this->body,
             'closeButton' => $this->closeButton,
             'options' => [
                 'id' => $this->getId().'-'.$this->type,
