@@ -55,53 +55,36 @@ simply use:
 AdminLTE Plugins
 ----------------
 AdminLTE Plugins are not included in AdminLteAsset, if you want to use any of them you can add it dynamically with PluginAsset.
-
-```php
-namespace hail812\adminlte3\assets;
-
-use yii\web\AssetBundle;
-
-class PluginAsset extends AssetBundle
-{
-    public $sourcePath = '@vendor/almasaeed2010/adminlte/plugins';
-
-    public $depends = [
-        'hail812\adminlte3\assets\AdminLteAsset'
-    ];
-
-    public static $pluginMap = [
-        'icheck-bootstrap' => [
-            'css' => ['icheck-bootstrap/icheck-bootstrap.css']
-        ]
-    ];
-
-    public function add($pluginName)
-    {
-        $pluginName = (array) $pluginName;
-
-        foreach ($pluginName as $name) {
-            $plugin = self::$pluginMap[$name];
-            if (isset($plugin['css'])) {
-                foreach ($plugin['css'] as $v) {
-                    $this->css[] = $v;
-                }
-            }
-            if (isset($plugin['js'])) {
-                foreach ($plugin['js'] as $v) {
-                    $this->js[] = $v;
-                }
-            }
-        }
-
-        return $this;
-    }
-}
-```
-
-for example (you should edit **PluginAsset::$pluginMap** first):
+For example:
 
 ```php
 /* @var $this \yii\web\View */
 
-\hail812\adminlte3\assets\PluginAsset::register($this)->add('icheck-bootstrap');
+\hail812\adminlte3\assets\PluginAsset::register($this)->add('sweetalert2');
+```
+
+before this, maybe you should edit params.php:
+
+```php
+return [
+    'adminEmail' => 'admin@example.com',
+    'hail812\yii2-adminlte3' => [
+        'pluginMap' => [
+            'sweetalert2' => [
+                'css' => 'sweetalert2-theme-bootstrap-4/bootstrap-4.min.css',
+                'js' => 'sweetalert2/sweetalert2.min.js'
+            ]
+        ]
+    ]
+];
+```
+
+or
+
+```php
+/* @var $this \yii\web\View */
+
+$bundle = \hail812\adminlte3\assets\PluginAsset::register($this);
+$bundle->css[] = 'sweetalert2-theme-bootstrap-4/bootstrap-4.min.css';
+$bundle->js[] = 'sweetalert2/sweetalert2.min.js';
 ```

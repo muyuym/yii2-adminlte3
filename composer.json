@@ -11,6 +11,7 @@
         }
     ],
     "require": {
+        "php": ">=7.0",
         "yiisoft/yii2": "~2.0.0",
         "yiisoft/yii2-bootstrap4": "~2.0.8",
         "almasaeed2010/adminlte": "~3.0"
