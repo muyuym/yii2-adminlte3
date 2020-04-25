@@ -68,7 +68,7 @@ before this, maybe you should edit params.php:
 ```php
 return [
     'adminEmail' => 'admin@example.com',
-    'hail812\yii2-adminlte3' => [
+    'hail812/yii2-adminlte3' => [
         'pluginMap' => [
             'sweetalert2' => [
                 'css' => 'sweetalert2-theme-bootstrap-4/bootstrap-4.min.css',

@@ -52,6 +52,6 @@ class PluginAsset extends AssetBundle
      */
     private function getPluginConfig($name)
     {
-        return self::$pluginMap[$name] ?? \Yii::$app->params['hail812\yii2-adminlte3']['pluginMap'][$name] ?? null;
+        return self::$pluginMap[$name] ?? \Yii::$app->params['hail812/yii2-adminlte3']['pluginMap'][$name] ?? null;
     }
 }
