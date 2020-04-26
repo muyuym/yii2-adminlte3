@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist hail812/yii2-adminlte3 "~1.0.1"
+php composer.phar require --prefer-dist hail812/yii2-adminlte3 "*"
 ```
 
 or add
 
 ```
-"hail812/yii2-adminlte3": "~1.0.1"
+"hail812/yii2-adminlte3": "*"
 ```
 
 to the require section of your `composer.json` file.
