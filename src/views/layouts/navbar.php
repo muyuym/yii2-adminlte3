@@ -151,9 +151,7 @@ use yii\helpers\Html;
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="<?=\yii\helpers\Url::toRoute('site/login')?>">
-                <i class="fas fa-sign-out-alt"></i>
-            </a>
+            <?= Html::a('<i class="fas fa-sign-out-alt"></i>', ['site/logout'], ['data-method' => 'post', 'class' => 'nav-link']) ?>
         </li>
         <li class="nav-item dropdown user-menu">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
