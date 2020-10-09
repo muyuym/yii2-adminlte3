@@ -61,6 +61,9 @@ For example:
 /* @var $this \yii\web\View */
 
 \hail812\adminlte3\assets\PluginAsset::register($this)->add('sweetalert2');
+
+// or
+\hail812\adminlte3\assets\PluginAsset::register($this)->add(['sweetalert2', 'toastr']);
 ```
 
 before this, maybe you should edit params.php:
@@ -73,7 +76,11 @@ return [
             'sweetalert2' => [
                 'css' => 'sweetalert2-theme-bootstrap-4/bootstrap-4.min.css',
                 'js' => 'sweetalert2/sweetalert2.min.js'
-            ]
+            ],
+            'toastr' => [
+                'css' => ['toastr/toastr.min.css'],
+                'js' => ['toastr/toastr.min.js']
+            ],
         ]
     ]
 ];
