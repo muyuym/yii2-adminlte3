@@ -22,12 +22,20 @@ class Alert extends Widget
         'success' => [
             'class' => 'alert-success',
             'icon' => 'fa-check'
+        ],
+        'light' => [
+            'class' => 'alert-light',
+        ],
+        'dark' => [
+            'class' => 'alert-dark'
         ]
     ];
 
     public $type;
 
     public $title = 'Alert';
+
+    public $icon;
 
     /**
      * @var string the body content in the alert component.
@@ -67,7 +75,9 @@ class Alert extends Widget
     {
         $head = '';
         if (!$this->simple) {
-            $head = '<h5><i class="icon fas '.$this->alertTypes[$this->type]['icon'].'"></i> '.$this->title.'!</h5>';
+            $icon = $this->icon ?? $this->alertTypes[$this->type]['icon'] ?? null;
+            $iconHtml = $icon ? '<i class="icon fas '.$icon.'"></i>' : '';
+            $head = '<h5>'.$iconHtml.' '.$this->title.'!</h5>';
         }
 
         echo \yii\bootstrap4\Alert::widget([
