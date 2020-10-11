@@ -3,7 +3,7 @@
     "description": "adminlte3 for yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","adminlte"],
-    "license": "BSD-4-Clause",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "hail",
