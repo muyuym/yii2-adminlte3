@@ -27,9 +27,13 @@ use yii\helpers\Html;
 
         <div class="row">
             <div class="col-8">
-                <div class="icheck-primary">
-                    <?= $form->field($model, 'rememberMe')->checkbox() ?>
-                </div>
+                <?= $form->field($model, 'rememberMe')->checkbox([
+                    'template' => '<div class="icheck-primary">{input}{label}</div>',
+                    'labelOptions' => [
+                        'class' => ''
+                    ],
+                    'uncheck' => null
+                ]) ?>
             </div>
             <div class="col-4">
                 <?= Html::submitButton('Sign In', ['class' => 'btn btn-primary btn-block']) ?>
