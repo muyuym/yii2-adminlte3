@@ -8,7 +8,7 @@ class PluginAsset extends AssetBundle
     public $sourcePath = '@vendor/almasaeed2010/adminlte/plugins';
 
     public $depends = [
-        'hail812\adminlte3\assets\AdminLteAsset'
+        'hail812\adminlte3\assets\BaseAsset'
     ];
 
     public static $pluginMap = [
