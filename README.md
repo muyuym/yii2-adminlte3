@@ -99,6 +99,7 @@ $bundle->js[] = 'sweetalert2/sweetalert2.min.js';
 Gii
 ---
 Now you need to tell Gii about out template. The setting is made in the config file.
+
 ```php
 // config/main-local.php for advanced app
 if (!YII_ENV_TEST) {
@@ -115,4 +116,5 @@ if (!YII_ENV_TEST) {
     ];
 }
 ```
+
 Open the CRUD generator and you will see that in the field `Code Template` of form appeared own template.
