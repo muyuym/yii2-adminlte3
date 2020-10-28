@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <div class="row">
+                    <div class="row mb-2">
                         <div class="col-md-12">
                             <?= "<?= " ?>Html::a(<?= $generator->generateString('Create ' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => 'btn btn-success']) ?>
                         </div>
@@ -70,7 +70,7 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
 
                             ['class' => 'hail812\adminlte3\yii\grid\ActionColumn'],
                         ],
-                        'summaryOptions' => ['class' => 'summary mt-2 mb-2'],
+                        'summaryOptions' => ['class' => 'summary mb-2'],
                         'pager' => [
                             'class' => 'yii\bootstrap4\LinkPager',
                         ]
