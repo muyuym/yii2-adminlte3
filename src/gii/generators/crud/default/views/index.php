@@ -35,9 +35,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
 
 
-<?= $generator->enablePjax ? "    <?php Pjax::begin(); ?>\n" : '' ?>
+<?= $generator->enablePjax ? "                    <?php Pjax::begin(); ?>\n" : '' ?>
 <?php if(!empty($generator->searchModelClass)): ?>
-<?= "                   <?php " . ($generator->indexWidgetType === 'grid' ? "// " : "") ?>echo $this->render('_search', ['model' => $searchModel]); ?>
+<?= "                    <?php " . ($generator->indexWidgetType === 'grid' ? "// " : "") ?>echo $this->render('_search', ['model' => $searchModel]); ?>
 <?php endif; ?>
 
 <?php if ($generator->indexWidgetType === 'grid'): ?>
@@ -90,7 +90,7 @@ if (($tableSchema = $generator->getTableSchema()) === false) {
                     ]) ?>
 <?php endif; ?>
 
-<?= $generator->enablePjax ? "    <?php Pjax::end(); ?>\n" : '' ?>
+<?= $generator->enablePjax ? "                    <?php Pjax::end(); ?>\n" : '' ?>
 
                 </div>
                 <!--.card-body-->
