@@ -9,7 +9,7 @@ use yii\bootstrap4\Breadcrumbs;
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">
+                    <h1 class="m-0">
                         <?php
                         if (!is_null($this->title)) {
                             echo \yii\helpers\Html::encode($this->title);
@@ -24,7 +24,7 @@ use yii\bootstrap4\Breadcrumbs;
                     echo Breadcrumbs::widget([
                         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                         'options' => [
-                            'class' => 'float-sm-right'
+                            'class' => 'breadcrumb float-sm-right'
                         ]
                     ]);
                     ?>
