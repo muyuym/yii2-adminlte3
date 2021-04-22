@@ -46,7 +46,7 @@ Copy files from @vendor/hail812/yii2-adminlte3/src/views to @app/views, then edi
 simply use:
 
 ```php
-<?= \hail812\adminlte3\widgets\Alert::widget([
+<?= \hail812\adminlte\widgets\Alert::widget([
     'type' => 'success',
     'body' => '<h3>Congratulations!</h3>'
 ]) ?>

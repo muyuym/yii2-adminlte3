@@ -4,6 +4,7 @@ namespace hail812\adminlte3\widgets;
 use yii\bootstrap4\Widget;
 
 /**
+ * @deprecated https://packagist.org/packages/hail812/yii2-adminlte-widgets
  * Class FlashAlert
  * @package hail812\adminlte3\widgets
  *

@@ -4,6 +4,11 @@ namespace hail812\adminlte3\widgets;
 use yii\base\ErrorException;
 use yii\bootstrap4\Widget;
 
+/**
+ * Class Alert
+ * @deprecated  https://packagist.org/packages/hail812/yii2-adminlte-widgets
+ * @package hail812\adminlte3\widgets
+ */
 class Alert extends Widget
 {
     public $alertTypes = [

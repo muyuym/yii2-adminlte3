@@ -6,6 +6,7 @@ use yii\bootstrap4\Widget;
 use yii\helpers\Html;
 
 /**
+ * @deprecated https://packagist.org/packages/hail812/yii2-adminlte-widgets
  * Class Callout
  * @package hail812\adminlte3\widgets
  * @example

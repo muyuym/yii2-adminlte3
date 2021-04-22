@@ -14,7 +14,8 @@
         "php": ">=7.0",
         "yiisoft/yii2": "~2.0.0",
         "yiisoft/yii2-bootstrap4": "~2.0.8",
-        "almasaeed2010/adminlte": "~3.1"
+        "almasaeed2010/adminlte": "~3.1",
+        "hail812/yii2-adminlte-widgets": "~1.0"
     },
     "autoload": {
         "psr-4": {
