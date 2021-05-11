@@ -51,6 +51,7 @@ simply use:
     'body' => '<h3>Congratulations!</h3>'
 ]) ?>
 ```
+more for [widgets](https://github.com/hail812/yii2-adminlte-widgets)
 
 AdminLTE Plugins
 ----------------
