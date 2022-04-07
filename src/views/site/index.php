@@ -18,6 +18,16 @@ $this->params['breadcrumbs'] = [['label' => $this->title]];
     </div>
 
     <div class="row">
+        <div class="col-12 col-sm-6 col-md-3">
+            <?= \hail812\adminlte\widgets\InfoBox::widget([
+                'text' => 'CPU Traffic',
+                'number' => '10 <small>%</small>',
+                'icon' => 'fas fa-cog',
+            ]) ?>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-md-4 col-sm-6 col-12">
             <?= \hail812\adminlte\widgets\InfoBox::widget([
                 'text' => 'Messages',
